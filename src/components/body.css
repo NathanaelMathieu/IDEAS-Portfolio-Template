@@ -1,3 +1,4 @@
-.body {
-    flex-grow: 1;
+.Body {
+  grid-row: 2 / 3;
+  justify-content: center;
 }
