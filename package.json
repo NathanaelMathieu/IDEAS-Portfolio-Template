@@ -5,15 +5,16 @@
   "homepage": "https://NathanaelMathieu.github.io/website-source",
   "dependencies": {
     "react": "^16.11.0",
+    "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.11.0",
-    "react-scripts": "3.2.0"
+    "react-scripts": "^3.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-		"deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
