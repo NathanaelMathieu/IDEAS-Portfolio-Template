@@ -1,10 +1,8 @@
-import React from 'react';
-import './footer.css';
+import React, { Component } from "react";
+import "./Footer.css";
 
-function Footer() {
-    return (
-        <div className="footer">This is the footer</div>
-        );
+export default class Footer extends Component {
+  render() {
+    return <div className="Footer">This is the footer</div>;
   }
-
-export default Footer;
+}

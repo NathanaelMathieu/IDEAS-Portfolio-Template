@@ -1,10 +1,8 @@
-import React from 'react';
-import './body.css';
+import React, { Component } from "react";
+import "./Body.css";
 
-function Body() {
-    return (
-        <div className="body">This is the body</div>
-        );
+export default class Body extends Component {
+  render() {
+    return <div className="Body">This is the body</div>;
   }
-
-export default Body;
+}

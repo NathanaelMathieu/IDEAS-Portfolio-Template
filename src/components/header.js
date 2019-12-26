@@ -1,10 +1,9 @@
-import React from 'react';
-import './header.css'
+import React, { Component } from "react";
+import { Navbar, Nav, NavItem } from "react-bootstrap";
+import "./Header.css";
 
-function Header() {
-    return (
-        <div className="header">This is the header</div>
-        );
+export default class Header extends Component {
+  render() {
+    return <div className="header">this is my header</div>;
   }
-
-export default Header;
+}

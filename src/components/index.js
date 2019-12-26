@@ -1,3 +1,3 @@
-export {default as Header} from './header.js';
-export {default as Body} from './body.js';
-export {default as Footer} from './footer.js';
+export { default as Header } from "./Header.js";
+export { default as Body } from "./Body.js";
+export { default as Footer } from "./Footer.js";
