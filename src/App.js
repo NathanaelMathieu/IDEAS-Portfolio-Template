@@ -1,14 +1,8 @@
-import React from "react";
-import "./App.css";
-import { Header, Body } from "./components/";
+import React, { Component } from "react";
+import Layout from "./Layout.js";
 
-function App() {
-  return (
-    <div className="app">
-      <Header />
-      <Body />
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return <Layout />;
+  }
 }
-
-export default App;

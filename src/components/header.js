@@ -1,9 +1,33 @@
 import React, { Component } from "react";
-import { Navbar, Nav, NavItem } from "react-bootstrap";
-import "./Header.css";
+import { Link } from "react-router-dom";
+import "./Header.scss";
+import logo from "../resources/logo_lowres.png";
 
 export default class Header extends Component {
   render() {
-    return <div className="header">this is my header</div>;
+    return (
+      <div className="Header">
+        <ul>
+          <li>
+            <a
+              href="https://www.wesleyan.edu/ideas/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src={logo} alt="IDEAS" />
+            </a>
+          </li>
+          <li>
+            <Link to="/about">About Me</Link>
+          </li>
+          <li>
+            <Link to="/projects">Projects</Link>
+          </li>
+          <li>
+            <Link to="/contact">Contact</Link>
+          </li>
+        </ul>
+      </div>
+    );
   }
 }

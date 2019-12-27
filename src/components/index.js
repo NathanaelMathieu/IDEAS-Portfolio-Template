@@ -1,3 +1,4 @@
 export { default as Header } from "./Header.js";
-export { default as Body } from "./Body.js";
-export { default as Footer } from "./Footer.js";
+export { default as About } from "./About.js";
+export { default as Projects } from "./Projects.js";
+export { default as Contact } from "./Contact.js";
