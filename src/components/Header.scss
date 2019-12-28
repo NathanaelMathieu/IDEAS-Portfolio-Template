@@ -8,8 +8,9 @@ $text-height: $header-height * 0.6;
   width: 100vw;
   grid-row: 1 / 2;
   border-bottom: 2px solid $wesleyan-black;
-  background-color: beige;
+  background-color: $wesleyan-red;
   ul {
+    float: top;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -26,13 +27,12 @@ $text-height: $header-height * 0.6;
     }
     a {
       text-decoration: none;
-      color: $wesleyan-black;
+      color: white;
       padding: 0 2vw $header-height * 0.125;
     }
     a:hover {
       padding-top: 1vh;
-      color: $wesleyan-red;
-      background-color: rgba($wesleyan-black, 0.15);
+      background-color: $blue-grey;
     }
   }
 }

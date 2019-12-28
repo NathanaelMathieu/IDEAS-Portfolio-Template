@@ -1,8 +1,8 @@
-@import "src/style.scss";
+@import "./style.scss";
 
 body {
   margin: 0;
-  background: white;
+  background: $blue-grey-light;
   height: 100vh;
 }
 
