@@ -1,9 +1,9 @@
 @import "./style.scss";
 
 body {
+  font-family: $montserrat;
   margin: 0;
   background: $blue-grey-light;
-  height: 100vh;
 }
 
 #root {

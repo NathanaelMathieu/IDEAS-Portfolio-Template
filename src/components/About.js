@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Layout from "../Layout.js";
-import "./About.scss";
 
 export default class About extends Component {
   render() {

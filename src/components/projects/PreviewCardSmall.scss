@@ -1,0 +1,49 @@
+@import "../../style.scss";
+
+$image-width-small: 27vw;
+$image-height-small: calc(#{$image-width-small} * 2 / 3);
+
+.PreviewCardSmall {
+  width: calc(#{$image-width-small} + 6vw);
+  height: calc(#{$image-height-small} + 4vw);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $blue-grey;
+  border-radius: 15px;
+  .image_wrapper {
+    position: relative;
+    width: $image-width-small;
+    height: $image-height-small;
+    display: flex;
+    img {
+      height: inherit;
+      max-width: inherit;
+      height: auto;
+      align-self: center;
+    }
+    p {
+      position: absolute;
+      max-width: inherit;
+      max-height: inherit;
+      margin: 0 0 0 0;
+      padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      background: $blue-pale-transparent;
+      color: #fff;
+      visibility: hidden;
+      opacity: 0;
+      overflow: hidden;
+
+      /* transition effect. not necessary */
+      transition: opacity 0.5s, visibility 0.2s;
+    }
+  }
+  .image_wrapper:hover p {
+    visibility: visible;
+    opacity: 1;
+  }
+}

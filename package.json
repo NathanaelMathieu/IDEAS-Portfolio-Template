@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://NathanaelMathieu.github.io/website-source",
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.11.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.11.0",

@@ -2,8 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import "./index.scss";
-import App from "./App";
-import { Contact, Projects, About } from "./components/";
+import { Contact, About } from "./components/";
+import { Projects } from "./components/projects";
 import * as serviceWorker from "./serviceWorker";
 import NotFound from "./components/NotFound";
 
