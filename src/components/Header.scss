@@ -3,9 +3,9 @@
 $text-height: $header-height * 0.6;
 
 .Header {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   font-family: $raleway;
   font-size: $text-height;
-  width: 100vw;
   grid-row: 1 / 2;
   border-bottom: 2px solid $wesleyan-black;
   background-color: $wesleyan-red;
@@ -15,7 +15,7 @@ $text-height: $header-height * 0.6;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: 0;
+    margin: auto;
     padding: 0;
     padding-top: 0.4vh;
     li {
