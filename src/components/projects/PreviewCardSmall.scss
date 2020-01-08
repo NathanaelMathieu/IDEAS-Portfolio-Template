@@ -1,33 +1,34 @@
-@import "../../style.scss";
-
-$image-width-small: 27vw;
-$image-height-small: calc(#{$image-width-small} * 2 / 3);
+@import "src/style.scss";
 
 .PreviewCardSmall {
-  width: calc(#{$image-width-small} + 6vw);
-  height: calc(#{$image-height-small} + 4vw);
+  width: $card-width-small;
+  height: $card-height-small;
   display: flex;
   align-items: center;
   justify-content: center;
   background: $blue-grey;
-  border-radius: 15px;
+  border-radius: 12px;
+  transition: box-shadow 0.5s;
   .image_wrapper {
     position: relative;
     width: $image-width-small;
     height: $image-height-small;
     display: flex;
     img {
-      height: inherit;
-      max-width: inherit;
-      height: auto;
+      width: $image-width-small;
       align-self: center;
     }
     p {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+      text-align: right;
+
       position: absolute;
-      max-width: inherit;
-      max-height: inherit;
-      margin: 0 0 0 0;
-      padding: 1.5vw 1.5vw 1.5vw 1.5vw;
+      max-width: calc($image-width-small - 1vw);
+      max-height: calc($image-height-small - 1vh);
+      padding: 1vw 1vh 1vw 1vh;
+      margin: auto;
       top: 0;
       bottom: 0;
       right: 0;
@@ -38,11 +39,13 @@ $image-height-small: calc(#{$image-width-small} * 2 / 3);
       opacity: 0;
       overflow: hidden;
 
-      /* transition effect. not necessary */
       transition: opacity 0.5s, visibility 0.2s;
     }
   }
-  .image_wrapper:hover p {
+}
+.PreviewCardSmall:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  .image_wrapper p {
     visibility: visible;
     opacity: 1;
   }
