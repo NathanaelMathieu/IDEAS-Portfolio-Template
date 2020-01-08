@@ -3,12 +3,9 @@
 .ProjectContainer {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  //the below doesn't work for in edge 18, but all other major browsers
+  justify-content: space-evenly;
   max-width: 100vw;
   flex-wrap: wrap;
   min-height: calc(100vh - #{$header-height});
-  margin: auto;
-  * {
-    margin: 1vw;
-  }
 }

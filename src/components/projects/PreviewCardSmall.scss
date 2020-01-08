@@ -1,8 +1,9 @@
 @import "src/style.scss";
 
 .PreviewCardSmall {
-  width: $card-width-small;
-  height: $card-height-small;
+  margin: 1vw;
+  width: calc(#{$card-width-small} + 1vw);
+  height: calc(#{$card-height-small} + 1vh);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,10 +24,9 @@
       align-items: flex-end;
       justify-content: flex-end;
       text-align: right;
+      width: calc(#{$image-width-small} - 1vw);
 
       position: absolute;
-      max-width: calc($image-width-small - 1vw);
-      max-height: calc($image-height-small - 1vh);
       padding: 1vw 1vh 1vw 1vh;
       margin: auto;
       top: 0;
