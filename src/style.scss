@@ -6,11 +6,17 @@ $montserrat: "Montserrat", sans-serif;
 
 $wesleyan-red: #d72121;
 $wesleyan-black: #101820;
-$blue-grey: #2E8888;
+$blue-grey: #2e8888;
 $blue-grey-light: rgb(63, 189, 189);
 $blue-grey-dark: #005555;
-$blue-pale-transparent: rgba(29, 106, 154, 0.75);
+$blue-pale-transparent: rgba(29, 106, 154, 0.3);
 
+$header-height: 40px;
 
-$header-height: 5vh;
-
+//Preview Card Style Variables for 4:6 images
+$image-width-small: 27vw;
+$image-height-small: calc(#{$image-width-small} * 2 / 3);
+$image-width-large: calc(#{$image-width-small} * 2);
+$image-height-large: calc(#{$image-height-small} * 2);
+$card-width-small: calc(#{$image-width-small} + 1.5vw);
+$card-height-small: calc(#{$image-height-small} + 1vw);
