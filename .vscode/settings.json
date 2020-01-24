@@ -2,4 +2,7 @@
     "cSpell.words": [
         "unmount"
     ]
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
