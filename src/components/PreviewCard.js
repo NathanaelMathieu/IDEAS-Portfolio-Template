@@ -1,5 +1,6 @@
 import "./PreviewCard.scss";
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 import defaultImage from "../resources/ImageNotFound.png";
 
 export default class PreviewCard extends Component {
@@ -15,9 +16,17 @@ export default class PreviewCard extends Component {
   }
 }
 
+PreviewCard.propTypes = {
+  "route": PropTypes.string,
+  "size": PropTypes.number,
+  "sourceImage": PropTypes.object,
+  "text": PropTypes.string
+};
+
+
 PreviewCard.defaultProps = {
-  "size": 1,
   "route": "",
+  "size": 1,
   "sourceImage": defaultImage,
   "text": "This project is really cool!"
 };
