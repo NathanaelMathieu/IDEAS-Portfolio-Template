@@ -1,5 +1,5 @@
 import { Component } from "react";
-// import "./Projects.scss";
+// Import "./Projects.scss";
 
 export default class ProjectPage extends Component {
   render() {

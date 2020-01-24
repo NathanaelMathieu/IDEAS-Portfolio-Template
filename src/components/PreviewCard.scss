@@ -1,9 +1,8 @@
 @import "src/style.scss";
 
-.PreviewCardSmall {
-  margin: 1vw;
-  width: calc(#{$card-width-small} + 1vw);
-  height: calc(#{$card-height-small} + 1vh);
+.PreviewCard {
+  float: left;
+  margin: 1vw 1.5vw 1.5vw 1vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,9 +10,8 @@
   border-radius: 12px;
   transition: box-shadow 0.5s;
   .image_wrapper {
+    padding: 10px;
     position: relative;
-    width: $image-width-small;
-    height: $image-height-small;
     display: flex;
     img {
       width: $image-width-small;
@@ -27,8 +25,8 @@
       width: calc(#{$image-width-small} - 1vw);
 
       position: absolute;
-      padding: 1vw 1vh 1vw 1vh;
-      margin: auto;
+      padding-right: 7px;
+      margin: 10px;//see padding
       top: 0;
       bottom: 0;
       right: 0;

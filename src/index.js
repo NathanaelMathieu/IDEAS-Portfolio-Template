@@ -1,13 +1,14 @@
+import "./index.scss";
+import * as serviceWorker from "./serviceWorker";
+import { About, Contact } from "./pages/";
+import { NotFound, Projects } from "./pages";
+import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+// Import { Cube } from "./pages/projects";
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import "./index.scss";
-import { Contact, About } from "./components/";
-import { Projects } from "./components/projects";
-import * as serviceWorker from "./serviceWorker";
-import NotFound from "./components/NotFound";
 
-const routing = (
+
+const routing =
   <Router>
     <div>
       <Switch>
@@ -15,15 +16,20 @@ const routing = (
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/projects" component={Projects} />
+        {/* <Route exact path="/projects/cube" component={Cube} /> */}
         <Route component={NotFound} />
       </Switch>
     </div>
-  </Router>
+  </Router>;
+
+ReactDOM.render(
+routing,
+document.getElementById("root")
 );
 
-ReactDOM.render(routing, document.getElementById("root"));
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
+/*
+ * If you want your app to work offline and load faster, you can change
+ * unregister() to register() below. Note this comes with some pitfalls.
+ * Learn more about service workers: https://bit.ly/CRA-PWA
+ */
 serviceWorker.unregister();

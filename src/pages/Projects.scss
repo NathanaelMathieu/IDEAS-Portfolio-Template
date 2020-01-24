@@ -1,0 +1,6 @@
+@import "src/style.scss";
+
+.ProjectContainer {
+  max-width: 100vw;
+  min-height: calc(100vh - #{$header-height});
+}
