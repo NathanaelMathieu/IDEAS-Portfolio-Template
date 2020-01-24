@@ -1,38 +1,37 @@
 @import "src/style.scss";
 
-$text-height: $header-height * 0.6;
+$text-height: calc(#{$header-height} * 0.75);
 
 .Header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  font-family: $raleway;
-  font-size: $text-height;
   grid-row: 1 / 2;
   border-bottom: 2px solid $wesleyan-black;
   background-color: $wesleyan-red;
+  height: $header-height;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   ul {
-    float: top;
+    padding-left: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin: auto;
-    padding: 0;
-    padding-top: 0.4vh;
+    list-style-type: none;
+    height: 100%;
     li {
-      list-style-type: none;
-      img {
-        padding-top: .3vh;
-        height: $text-height;
+      a {
+        padding: 3px 5px 2px 5px;
+        text-decoration: none;
+        font-family: $raleway;
+        font-size: $text-height;
+        color: white;
+      }
+      a:hover {
+        background-color: $blue-grey;
       }
     }
-    a {
-      text-decoration: none;
-      color: white;
-      padding: 0 2vw $header-height * 0.125;
-    }
-    a:hover {
-      padding-top: 1vh;
-      background-color: $blue-grey;
-    }
+
   }
 }

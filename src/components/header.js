@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
-import logo from "../resources/logo_lowres.png";
+// import logo from "../resources/logo_lowres.png";
 
 export default class Header extends Component {
   render() {
@@ -14,7 +14,7 @@ export default class Header extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src={logo} alt="IDEAS" />
+              IDEAS
             </a>
           </li>
           <li>
