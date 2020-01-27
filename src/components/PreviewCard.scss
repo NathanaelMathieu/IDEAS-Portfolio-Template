@@ -2,7 +2,7 @@
 
 .PreviewCard {
   float: left;
-  margin: 1vw 1.5vw 1.5vw 1vw;
+  padding: calc(#{$projects-gap}/3) calc(#{$projects-gap}/2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -25,8 +25,6 @@
       width: calc(#{$image-width-small} - 1vw);
 
       position: absolute;
-      padding-right: 7px;
-      margin: 10px;//see padding
       top: 0;
       bottom: 0;
       right: 0;
@@ -43,6 +41,7 @@
 }
 .PreviewCard:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
   .image_wrapper p {
     visibility: visible;
     opacity: 1;

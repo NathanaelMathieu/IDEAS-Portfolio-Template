@@ -15,10 +15,11 @@ export default class Projects extends Component {
           <PreviewCard sourceImage={cubeBrick}/>
           <PreviewCard sourceImage={cubeBrick} />
           <PreviewCard sourceImage={cubeLights} />
+          <PreviewCard sourceImage={cubeBrick} />
+
           <PreviewCard sourceImage={cubeLights} />
           {/* <PreviewCardSmall sourceImage={cubeSide} />
           <PreviewCardSmall sourceImage={cubeSide} /> */}
-          <PreviewCard sourceImage={cubeBrick} />
           <PreviewCard sourceImage={cubeBrick} />
           <PreviewCard sourceImage={cubeLights} />
           {/* <PreviewCardSmall sourceImage={cubeSide} /> */}
