@@ -27,9 +27,11 @@ $text-height: calc(#{$header-height} * 0.75);
         font-family: $raleway;
         font-size: $text-height;
         color: white;
+        transition: background-color 0.5s cubic-bezier(.1, .8, .9, .9) ;
       }
       a:hover {
         background-color: $blue-grey;
+        cursor: pointer;
       }
     }
 
