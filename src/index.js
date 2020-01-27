@@ -3,7 +3,7 @@ import * as serviceWorker from "./serviceWorker";
 import { About, Contact } from "./pages/";
 import { NotFound, Projects } from "./pages";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-// Import { Cube } from "./pages/projects";
+import { Cube } from "./pages/projects/";
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -16,7 +16,7 @@ const routing =
         <Route exact path="/about" component={About} />
         <Route exact path="/contact" component={Contact} />
         <Route exact path="/projects" component={Projects} />
-        {/* <Route exact path="/projects/cube" component={Cube} /> */}
+        <Route exact path="/projects/cube" component={Cube} />
         <Route component={NotFound} />
       </Switch>
     </div>

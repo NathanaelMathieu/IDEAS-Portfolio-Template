@@ -9,7 +9,7 @@ export default class Cube extends Component {
     return (
       <Layout>
         <div className="cubePage">
-          <p></p>
+          <p>Welcome to the Cube page!</p>
         </div>
       </Layout>
     );

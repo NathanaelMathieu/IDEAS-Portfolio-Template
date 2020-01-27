@@ -12,7 +12,7 @@ export default class Projects extends Component {
     return (
       <Layout>
         <div className="ProjectContainer">
-          <PreviewCard sourceImage={cubeBrick}/>
+          <PreviewCard sourceImage={cubeBrick} route={"projects/cube"}/>
           <PreviewCard sourceImage={cubeBrick} />
           <PreviewCard sourceImage={cubeLights} />
           <PreviewCard sourceImage={cubeBrick} />
