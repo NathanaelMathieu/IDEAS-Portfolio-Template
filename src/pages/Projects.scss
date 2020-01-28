@@ -2,14 +2,13 @@
 
 .ProjectContainer {
   display: grid;
-  align-items: center;
   grid-template-columns: calc(100% - #{$projects-gap});
   column-gap: $projects-gap;
   row-gap: 3vh;
   max-width: inherit;
-  height: auto;
   min-height: calc(100vh - #{$header-height});
-  padding:  $projects-gap;
+  margin: auto;
+  padding: $projects-gap;
 
   @media only screen and (min-width: 600px){
     grid-template-columns: repeat(2, calc(50% - #{$projects-gap} * 2 / 3));
