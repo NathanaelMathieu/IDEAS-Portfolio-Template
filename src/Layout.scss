@@ -1,9 +1,9 @@
 @import "src/style.scss";
 
 .Layout {
+  min-width: 500px;
   scroll-behavior: smooth;
   display: grid;
   height: 100%;
   grid-template-rows: $header-height;
-  row-gap: $projects-gap;
 }

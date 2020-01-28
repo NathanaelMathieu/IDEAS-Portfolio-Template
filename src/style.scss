@@ -13,14 +13,3 @@ $blue-pale-transparent: rgba(29, 106, 154, 0.3);
 
 $header-height: 40px;
 $projects-gap: 3%;
-
-
-//Preview Card Style Variables for 4:6 images
-$image-width-small: 27vw;
-$image-height-small: calc(#{$image-width-small} * 2 / 3);
-$image-width-large: calc(#{$image-width-small} * 2 + 5vw);
-$image-height-large: calc(#{$image-height-small} * 2 + 5.5vw);
-$card-width-small: calc(#{$image-width-small} + 1.5vw);
-$card-height-small: calc(#{$image-height-small} + 1vw);
-$card-width-large: calc(#{$image-width-large} + 1.5vw);
-$card-height-large: calc(#{$image-height-large} + 1vw);
