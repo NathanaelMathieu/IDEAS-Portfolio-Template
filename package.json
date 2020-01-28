@@ -2,7 +2,7 @@
   "name": "professional-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://NathanaelMathieu.github.io/IDEAS-Portfolio",
+  "homepage": "https://nathanaelmathieu.github.io/IDEAS-Portfolio",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.11.0",

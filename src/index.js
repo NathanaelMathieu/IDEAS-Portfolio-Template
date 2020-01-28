@@ -2,7 +2,7 @@ import "./index.scss";
 import * as serviceWorker from "./serviceWorker";
 import { About, Contact } from "./pages/";
 import { NotFound, Projects } from "./pages";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
+import { Route, HashRouter as Router, Switch } from "react-router-dom";
 import { Cube } from "./pages/projects/";
 import React from "react";
 import ReactDOM from "react-dom";
