@@ -7,10 +7,24 @@ $text-height: calc(#{$header-height} * 0.75);
   grid-row: 1 / 2;
   border-bottom: 2px solid $wesleyan-black;
   background-color: $wesleyan-red;
-  height: $header-height;
   display: flex;
   align-items: center;
   justify-content: center;
+  text-decoration: none;
+  font-family: $raleway;
+
+  font-size: 18px;
+  height:  auto;
+
+  @media only screen and (min-width: 350px){
+    font-size: calc((11vw - 15px) * .75);
+  }
+
+  @media only screen and (min-width: 510px){
+    font-size: $text-height;
+    height: $header-height;
+  }
+
   ul {
     padding-left: 0;
     width: 100%;
@@ -22,12 +36,10 @@ $text-height: calc(#{$header-height} * 0.75);
     height: 100%;
     li {
       a {
-        padding: 3px 5px 2px 5px;
         text-decoration: none;
-        font-family: $raleway;
-        font-size: $text-height;
+        padding: 3px 5px 2px 5px;
         color: white;
-        transition: background-color 0.5s cubic-bezier(.1, .8, .9, .9) ;
+        transition: background-color 0.5s cubic-bezier(.1, .8, .9, .9);
       }
       a:hover {
         background-color: $blue-grey;
