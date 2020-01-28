@@ -1,7 +1,7 @@
 @import "src/style.scss";
 
 .PreviewCard {
-  float: left;
+  width: 100%;
   padding: calc(#{$projects-gap}/3) calc(#{$projects-gap}/2);
   display: flex;
   align-items: center;
@@ -13,9 +13,12 @@
     padding: 10px;
     position: relative;
     display: flex;
+    width: auto;
     img {
-      width: $image-width-small;
+      object-fit: cover;
+      width: 100%;
       align-self: center;
+      max-height: 100%;
     }
     p {
       display: flex;
@@ -23,7 +26,7 @@
       justify-content: flex-end;
       text-align: right;
       padding: 10px;
-      width: calc(#{$image-width-small} - 20px);
+      width: calc(100% - 40px);
       margin-top: 10px;
       margin-bottom: 10px;
       position: absolute;
