@@ -16,6 +16,10 @@ import cubeSide from "../resources/cube/side1_sd.jpg";
 
 
 export default class Projects extends Component {
+  componentDidMount() {
+    document.title = "Projects | Nathanael Mathieu";
+  }
+
   render() {
     return (
       <Layout>
