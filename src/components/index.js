@@ -1,2 +1,2 @@
 export { default as Header } from "./Header.js";
-export { default as PreviewCard } from "./PreviewCard.js";
+export { default as ImageCard } from "./ImageCard.js";

@@ -1,6 +1,6 @@
 @import "src/style.scss";
 
-.PreviewCard {
+.ImageCard {
   width: 100%;
   padding: calc(#{$projects-gap}/3) calc(#{$projects-gap}/2);
   display: flex;
@@ -8,19 +8,19 @@
   justify-content: center;
   background: $blue-grey;
   border-radius: 12px;
-  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s ease-in-out;
   .image_wrapper {
     padding: 10px;
     position: relative;
     display: flex;
     width: auto;
-    img {
+    .image {
       object-fit: cover;
       width: 100%;
       align-self: center;
       max-height: 100%;
     }
-    p {
+    .text {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end;
@@ -42,10 +42,15 @@
     }
   }
 }
-.PreviewCard:hover {
+.Clickable{
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+}
+.Clickable:hover{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
-  .image_wrapper p {
+}
+.ImageCard:hover {
+  .image_wrapper .text {
     visibility: visible;
     opacity: 1;
   }
