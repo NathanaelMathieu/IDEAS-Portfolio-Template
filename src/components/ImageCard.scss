@@ -1,47 +1,40 @@
 @import "src/style.scss";
 
 .ImageCard {
-  width: 100%;
-  padding: calc(#{$projects-gap}/3) calc(#{$projects-gap}/2);
+
+  padding: calc(#{$projects-gap}) calc(#{$projects-gap}*1.5);
   display: flex;
   align-items: center;
-  justify-content: center;
   background: $blue-grey;
   border-radius: 12px;
   transition: box-shadow 0.5s, transform 0.5s ease-in-out;
-  .image_wrapper {
-    padding: 10px;
-    position: relative;
+  position: relative;
+  .image {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    align-self: center;
+  }
+  .text {
+    font-family: $montserrat;
     display: flex;
-    width: auto;
-    .image {
-      object-fit: cover;
-      width: 100%;
-      align-self: center;
-      max-height: 100%;
-    }
-    .text {
-      display: flex;
-      align-items: flex-end;
-      justify-content: flex-end;
-      text-align: right;
-      padding: 10px;
-      width: calc(100% - 40px);
-      margin-top: 10px;
-      margin-bottom: 10px;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      background: $blue-pale-transparent;
-      color: #fff;
-      visibility: hidden;
-      opacity: 0;
-      overflow: hidden;
+    align-items: flex-end;
+    justify-content: flex-end;
+    text-align: right;
+    padding: 10px;
+    width: calc(100% - #{$projects-gap}*3 - 20px);
+    height: calc(100% - #{$projects-gap}*3 - 20px);
+    position: absolute;
+    background: $blue-pale-transparent;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    overflow: hidden;
 
-      transition: opacity 0.5s, visibility 0.2s;
-    }
+    transition: opacity 0.5s, visibility 0.2s;
   }
 }
+
 .Clickable{
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
 }
@@ -50,7 +43,7 @@
   cursor: pointer;
 }
 .ImageCard:hover {
-  .image_wrapper .text {
+  .text {
     visibility: visible;
     opacity: 1;
   }

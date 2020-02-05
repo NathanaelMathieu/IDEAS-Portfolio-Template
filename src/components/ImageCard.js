@@ -2,7 +2,7 @@ import "./ImageCard.scss";
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
-import defaultImage from "../resources/ImageNotFound.png";
+import defaultImage from "../resources/imageNotFound.png";
 
 export default class ImageCard extends Component {
   getText() {
@@ -16,25 +16,23 @@ export default class ImageCard extends Component {
   }
 
   render() {
-    const inside = <div className="image_wrapper">
-        <img className="image" src={this.props.sourceImage}
-          alt={this.props.text}></img>
-        {this.getText()}
-      </div>;
-
     if (this.props.clickable) {
       return (
         <Link className="ImageCard Clickable"
-        onClick={this.handleOnClick} to={this.props.route}>
-          {inside}
+         onClick={this.handleOnClick} to={this.props.route}>
+          <img className="image" src={this.props.image}
+           alt={this.props.text}></img>
+          {this.getText()}
         </Link>
       );
     }
 
     return (
       <div className="ImageCard"
-      onClick={this.handleOnClick} to={this.props.route}>
-        {inside}
+       onClick={this.handleOnClick} to={this.props.route}>
+        <img className="image" src={this.props.image}
+         alt={this.props.text}></img>
+        {this.getText()}
       </div>
     );
   }
@@ -42,9 +40,9 @@ export default class ImageCard extends Component {
 
 ImageCard.propTypes = {
   "clickable": PropTypes.bool,
+  "image": PropTypes.object,
   "route": PropTypes.string,
   "size": PropTypes.string,
-  "sourceImage": PropTypes.object,
   "text": PropTypes.string,
   "textEnabled": PropTypes.bool
 };
@@ -52,9 +50,9 @@ ImageCard.propTypes = {
 
 ImageCard.defaultProps = {
   "clickable": false,
+  "image": defaultImage,
   "route": "",
   "size": "4x6",
-  "sourceImage": defaultImage,
   "text": "This project is really cool!",
   "textEnabled": false
 };
