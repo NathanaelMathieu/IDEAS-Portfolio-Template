@@ -63,8 +63,7 @@ export default class About extends Component {
       <Layout>
         <div className="About">
           <div className="profile_picture">
-            {/* <ImageCard size="square" image={professionalPhoto}/> */}
-            <ImageCard size="square" />
+            <ImageCard size="square" image={professionalPhoto}/>
           </div>
           <div className="profile_text">
             {this.aboutText()}
