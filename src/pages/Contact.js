@@ -15,7 +15,7 @@ export default class Contact extends Component {
       <Layout>
         <div className="Contact">
           <div className="card_container">
-            <ImageCard image={professionalPhoto}/>
+            <ImageCard size="square" image={professionalPhoto}/>
           </div>
           <div className="text_container">
             <p>Scuppers gaff Yellow Jack bucko interloper hogshead Sink me
