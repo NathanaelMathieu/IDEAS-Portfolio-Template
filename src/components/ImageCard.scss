@@ -1,7 +1,6 @@
 @import "src/style.scss";
 
 .ImageCard {
-
   padding: calc(#{$projects-gap}) calc(#{$projects-gap}*1.5);
   display: flex;
   align-items: center;
@@ -12,8 +11,6 @@
   .image {
     max-height: 100%;
     max-width: 100%;
-    object-fit: cover;
-    align-self: center;
   }
   .text {
     font-family: $montserrat;
