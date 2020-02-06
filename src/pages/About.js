@@ -26,7 +26,7 @@ export default class About extends Component {
           Cutlass aye man-of-war sutler sheet Sink me blow the man
           down Jack Tar walk the plank reef sails. Line port blow
           the man down Pieces of Eight lass draft rigging lugger
-          skysail ballast. Bounty crow's nest smartly hang the jib
+          skysail ballast. Bounty crows nest smartly hang the jib
           scuppers case shot fore Jack Tar belaying pin crack
         </p>
       </>
@@ -52,7 +52,7 @@ export default class About extends Component {
           Execution dock bounty brigantine scourge of the seven
           seas carouser log handsomely flogging blow the man
           down six pounders.
-          Jennys tea cup.
+          Jenny tea cup.
         </p>
       </span>
     );
@@ -63,7 +63,8 @@ export default class About extends Component {
       <Layout>
         <div className="About">
           <div className="profile_picture">
-            <ImageCard size="square" image={professionalPhoto}/>
+            <ImageCard alt="My professional photo"
+              size="square" image={professionalPhoto}/>
           </div>
           <div className="profile_text">
             {this.aboutText()}
@@ -72,7 +73,8 @@ export default class About extends Component {
             {this.projectDescription()}
           </div>
           <div className="project_picture">
-            <ImageCard clickable route={"projects/cube"} textEnabled />
+            <ImageCard alt="Click to visit my Cube Project"
+              clickable route={"projects/cube"} textEnabled />
           </div>
         </div>
       </Layout>

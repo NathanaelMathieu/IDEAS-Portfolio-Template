@@ -21,16 +21,22 @@ export default class Projects extends Component {
       <Layout>
         <div className="ProjectContainer">
           <ImageCard image={cubeIso1} route={"projects/cube"}
-          textEnabled clickable />
+          textEnabled clickable alt="Click to visit my Cube project page"/>
           <ImageCard image={cubeLights}
-          textEnabled/>
-          <ImageCard image={cubeIso2} route={"projects/cube"}/>
-          <ImageCard image={cubeBrick} route={"projects/cube"}/>
-          <ImageCard image={cubeIso3} />
-          <ImageCard image={cubeHall} route={"projects/cube"}/>
+          textEnabled alt="Click to visit my Cube project page"/>
+          <ImageCard image={cubeIso2} route={"projects/cube"}
+           alt="Click to visit my Cube project page"/>
+          <ImageCard image={cubeBrick} route={"projects/cube"}
+           alt="Click to visit my Cube project page"/>
+          <ImageCard image={cubeIso3}
+           alt="Click to visit my Cube project page"/>
+          <ImageCard image={cubeHall} route={"projects/cube"}
+           alt="Click to visit my Cube project page"/>
           <ImageCard image={cubeIso4} />
-          <ImageCard image={cubeLights} route={"projects/cube"}/>
-          <ImageCard image={cubeSide} route={"projects/cube"}/>
+          <ImageCard image={cubeLights} route={"projects/cube"}
+           alt="Click to visit my Cube project page"/>
+          <ImageCard image={cubeSide} route={"projects/cube"}
+           alt="Click to visit my Cube project page"/>
           {/* This is where the project previews will go */}
         </div>
       </Layout>
