@@ -1,23 +1,42 @@
 @import "src/style.scss";
 
 .About{
-  margin: 50px 0;
+  margin: 2%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-evenly;
-  
+  justify-content: space-around;
+  font-size: large;
+  text-indent: 2em;
+  > * {
+    margin: 1%;
+    min-width: 330px;
+  }
   .profile_picture {
-    max-width: 30%;
+    max-width: 279px;
   }
-  .profile_text {
-    font-family: $montserrat;
-    max-width: 60%;
+  @media only screen and (min-width: 955px){
+    .profile_picture {
+      max-width: 30%;
+    }
+    .profile_text {
+      max-width: 60%;
+    }
+    .project_picture{
+      max-width: 50%;
+    }
   }
-  .project_text{
-    max-width: 45%;
+  @media only screen and (min-width: 1000px){
+    .project_picture{
+      order: 2;
+      max-width: 45%;
+    }
+    .project_text{
+      max-width: 45%;
+    }
   }
-  .project_picture{
-    max-width: 45%;
+  @media only screen and (min-width: 1250px){
+    font-size: x-large;
   }
 }
+

@@ -69,12 +69,12 @@ export default class About extends Component {
           <div className="profile_text">
             {this.aboutText()}
           </div>
-          <div className="project_text">
-            {this.projectDescription()}
-          </div>
           <div className="project_picture">
             <ImageCard alt="Click to visit my Cube Project"
-              clickable route={"projects/cube"} textEnabled />
+              clickable route="projects/cube" textEnabled />
+          </div>
+          <div className="project_text">
+            {this.projectDescription()}
           </div>
         </div>
       </Layout>
