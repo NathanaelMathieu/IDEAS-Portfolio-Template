@@ -7,7 +7,7 @@ import PropTypes from "prop-types";
 
 export default class ImageCard extends Component {
   getImage(props) {
-    if (props.image) {
+    if (typeof props.image === "undefined") {
       if (props.size === "square") {
         return defaultSquare;
       }
@@ -66,7 +66,6 @@ ImageCard.propTypes = {
 
 ImageCard.defaultProps = {
   "clickable": false,
-  "image": default4x6,
   "route": "",
   "size": "4x6",
   "text": "This project is really cool!",
