@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Layout from "../Layout.js";
 
-export default class AboutMe extends Component {
+export default class About extends Component {
   componentDidMount() {
     document.title = "About Me | Nathanael Mathieu";
   }
@@ -9,7 +9,7 @@ export default class AboutMe extends Component {
   render() {
     return (
       <Layout>
-        <div className="AboutMe">This is the About section</div>
+        <div className="About">This is the About section</div>
       </Layout>
     );
   }
