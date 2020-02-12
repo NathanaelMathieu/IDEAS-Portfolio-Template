@@ -1,7 +1,7 @@
 @import "src/style.scss";
 
 .ImageCard {
-  padding: calc(#{$projects-gap}) calc(#{$projects-gap}*1.5);
+  padding: 3%;
   display: flex;
   align-items: center;
   background: $blue-grey;
