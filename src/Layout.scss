@@ -3,7 +3,14 @@
 .Layout {
   min-width: 350px;
   scroll-behavior: smooth;
-  display: grid;
   height: 100%;
-  grid-template-rows: $header-height;
+  .header_container{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 99;
+  }
+  .Body{
+    padding: $header-height;
+  }
 }
