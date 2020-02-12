@@ -9,6 +9,7 @@
   min-height: calc(100vh - #{$header-height});
   margin: auto;
   padding: calc(#{$projects-gap} / 2);
+  justify-content: center;
 
   @media only screen and (min-width: 600px){
     grid-template-columns: repeat(2, calc(50% - #{$projects-gap} * 2 / 3));
