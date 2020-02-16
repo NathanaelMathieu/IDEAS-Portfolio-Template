@@ -5,7 +5,6 @@ $text-height: calc(#{$header-height} * 0.75);
 .Header {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   grid-row: 1 / 2;
-  // border-bottom: 2px solid $wesleyan-black;
   background-color: $wesleyan-red;
   display: flex;
   align-items: center;
