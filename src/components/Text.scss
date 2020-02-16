@@ -1,0 +1,10 @@
+@import "src/style.scss";
+
+.Text {
+  font-family: $montserrat;
+  font-size: 20px;
+  .heading {
+    font-family: $raleway;
+    font-size: 30px;
+  }
+}
