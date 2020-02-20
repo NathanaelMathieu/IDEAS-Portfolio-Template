@@ -7,6 +7,7 @@
   min-height: calc(100vh - #{$header-height} - 48px);
   align-items: center;
   justify-items: center;
+
   .card_container {
     flex: 1 1 50%;
     width: 100%;
@@ -14,6 +15,7 @@
       width: 400px;
     }
   }
+
   .text_container {
     flex: 1 1 30%;
     max-width: 400px;
@@ -21,8 +23,8 @@
       max-width: 80%;
     }
   }
+
   .button_container{
     flex: 1 1 20%;
-    font-family: $montserrat;
   }
 }
