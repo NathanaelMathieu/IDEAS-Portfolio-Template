@@ -1,14 +1,14 @@
 @import "src/style.scss";
 
-.Text {
+.body {
   font-family: $montserrat;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: justify;
   text-indent: 2em;
 }
 
-.Text .heading {
+.heading {
   font-family: $raleway;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
 }

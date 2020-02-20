@@ -5,26 +5,26 @@ import propTypes from "prop-types";
 function Text(props) {
 
   if (props.preformatted) {
-    return <pre className={`Text ${props.style}`}>
+    return <pre className={props.class}>
       {props.text}
     </pre>;
   }
 
   return (
-    <div className={`Text ${props.style}`}>
+    <div className={props.class}>
       {props.text.split("\n").map((item, i) => <p key={i}>{item}</p>)}
     </div>);
 }
 
 Text.propTypes = {
+  "class": propTypes.string,
   "preformatted": propTypes.bool,
-  "style": propTypes.string,
   "text": propTypes.string
 };
 
 Text.defaultProps = {
+  "class": "body",
   "preformatted": false,
-  "style": "",
   "text": ""
 };
 
