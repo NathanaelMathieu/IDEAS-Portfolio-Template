@@ -3,6 +3,7 @@ import React from "react";
 import propTypes from "prop-types";
 
 function Text(props) {
+
   if (props.preformatted) {
     return <pre className={`Text ${props.style}`}>
       {props.text}
@@ -11,7 +12,7 @@ function Text(props) {
 
   return (
     <div className={`Text ${props.style}`}>
-      {props.text}
+      {props.text.split("\n").map((item, i) => <p key={i}>{item}</p>)}
     </div>);
 }
 
