@@ -3,8 +3,12 @@
 .Text {
   font-family: $montserrat;
   font-size: 20px;
-  .heading {
-    font-family: $raleway;
-    font-size: 30px;
-  }
+  text-align: justify;
+  text-indent: 2em;
+}
+
+.Text .heading {
+  font-family: $raleway;
+  font-size: 30px;
+  text-align: center;
 }
