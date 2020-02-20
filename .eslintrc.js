@@ -227,7 +227,7 @@ module.exports = {
         "prefer-spread": "error",
         "prefer-template": "error",
         "quote-props": "error",
-        "quotes": "error",
+        "quotes": ["error", "double", {"allowTemplateLiterals": true}],
         "radix": "error",
         "require-atomic-updates": "error",
         "require-await": "error",
