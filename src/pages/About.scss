@@ -1,6 +1,6 @@
 @import "src/style.scss";
 
-.About{
+.About {
   margin: 2%;
   display: flex;
   flex-flow: row wrap;
@@ -15,27 +15,27 @@
   .profile_picture {
     max-width: 279px;
   }
-  @media only screen and (min-width: 955px){
+  @media only screen and (min-width: 955px) {
     .profile_picture {
       max-width: 30%;
     }
     .profile_text {
       max-width: 60%;
     }
-    .project_picture{
+    .project_picture {
       max-width: 50%;
     }
   }
-  @media only screen and (min-width: 1000px){
-    .project_picture{
+  @media only screen and (min-width: 1000px) {
+    .project_picture {
       order: 2;
       max-width: 45%;
     }
-    .project_text{
+    .project_text {
       max-width: 45%;
     }
   }
-  @media only screen and (min-width: 1250px){
+  @media only screen and (min-width: 1250px) {
     font-size: x-large;
   }
 }
