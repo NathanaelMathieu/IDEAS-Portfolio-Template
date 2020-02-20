@@ -19,18 +19,16 @@ export default class ImageCard extends Component {
   }
 
   getText() {
-    let text = <p/>;
-
     if (this.props.textEnabled) {
-      text = <p className="text">{this.props.text}</p>;
+      return <p className="text">{this.props.text}</p>;
     }
 
-    return text;
+    return <p/>;
   }
 
   render() {
-    const { route, alt } = this.props,
-      image = this.getImage(this.props);
+    const { route, alt } = this.props;
+    const image = this.getImage(this.props);
 
     if (this.props.clickable) {
       return (
