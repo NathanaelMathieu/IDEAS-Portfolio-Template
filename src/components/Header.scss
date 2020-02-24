@@ -9,11 +9,9 @@
   font-family: $raleway;
   height: $header-height;
   font-size: 18px;
-
   @media only screen and (min-width: 350px){
     font-size: calc((11vw - 15px) * .75);
   }
-
   @media only screen and (min-width: 510px){
     font-size: calc(#{$header-height} * 0.75);
   }
