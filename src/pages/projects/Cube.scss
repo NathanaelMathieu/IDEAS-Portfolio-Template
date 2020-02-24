@@ -1,0 +1,39 @@
+@import "src/style.scss";
+
+.Cube {
+  margin: 2%;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  text-indent: 2em;
+  > * {
+    margin: 1%;
+    min-width: 330px;
+    flex-basis: 100vw;
+  }
+  @media only screen and (min-width: 600px) {
+    .main_picture {
+      flex-basis: 35vw;
+    }
+    .main_text {
+      max-width: 55vw;
+    }
+    .end_picture {
+      max-width: 45vw;
+    }
+    .end_text {
+      max-width: 45vw;
+    }
+  }
+  @media only screen and (min-width: 1000px) {
+    .end_picture {
+      order: 2;
+    }
+  }
+  @media only screen and (min-width: 1250px) {
+    font-size: x-large;
+  }
+}
+
