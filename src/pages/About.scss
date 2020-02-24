@@ -6,37 +6,40 @@
   flex-flow: row wrap;
   align-items: center;
   justify-content: space-around;
-  font-size: large;
-  text-indent: 2em;
   > * {
     margin: 1%;
     min-width: 330px;
+    flex-basis: 100vw;
+  }
+  .profile_text .heading{
+    overflow: hidden;
+    height: 0;
   }
   .profile_picture {
-    max-width: 279px;
+    flex-basis: 60vw;
   }
-  @media only screen and (min-width: 955px) {
+  @media only screen and (min-width: 888px) {
     .profile_picture {
-      max-width: 30%;
+      flex-basis: 35vw;
     }
     .profile_text {
-      max-width: 60%;
+      flex-basis: 55vw;
+      .heading{
+        height: auto;
+      }
     }
     .project_picture {
-      max-width: 50%;
+      flex-basis: 45vw;
+      order: 2;
+    }
+    .project_text {
+      flex-basis: 45vw;
     }
   }
   @media only screen and (min-width: 1000px) {
-    .project_picture {
+    .end_picture {
       order: 2;
-      max-width: 45%;
     }
-    .project_text {
-      max-width: 45%;
-    }
-  }
-  @media only screen and (min-width: 1250px) {
-    font-size: x-large;
   }
 }
 
