@@ -1,7 +1,7 @@
 import "./About.scss";
+import { ImageCard, Text } from "../components/";
 import React, { Component } from "react";
 import { aboutMeText, aboutProjectText } from "./Text/aboutText.js";
-import { ImageCard } from "../components/";
 import Layout from "../Layout.js";
 import cubeIso2 from "../resources/projects/cube/iso2_sd.jpg";
 import professionalPhoto from "../resources/professionalPhoto.JPG";
@@ -20,6 +20,7 @@ export default class About extends Component {
               size="square" image={professionalPhoto}/>
           </div>
           <div className="profile_text">
+            <Text class="heading" text="About Me"/>
             {aboutMeText}
           </div>
           <div className="project_picture">
