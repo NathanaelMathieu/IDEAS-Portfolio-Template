@@ -1,8 +1,14 @@
+import "./NotFound.scss";
+import Layout from "../Layout";
 import React from "react";
 
-const NotFound = () => <>
-    <h1>404 Error </h1>
+function NotFound () {
+return <Layout>
+  <body>
+    <h1>404 Error</h1>
     <p>Address Not Found</p>
-  </>;
+  </body>
+</Layout>;
+}
 
 export default NotFound;

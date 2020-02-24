@@ -1,0 +1,15 @@
+@import "src/style.scss";
+
+.Layout {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      font-family: $raleway;
+    }
+    p {
+      font-family: $montserrat;
+    }
+  }
+}
