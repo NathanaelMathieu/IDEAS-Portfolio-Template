@@ -2,13 +2,19 @@
 
 .body {
   font-family: $montserrat;
-  font-size: 1.2rem;
+  font-size: calc(1rem + 0.3vw);
   text-align: justify;
   text-indent: 2em;
 }
 
 .heading {
+  font-size: 18px;
+  @media only screen and (min-width: 350px){
+    font-size: calc((11vw - 15px) * .75);
+  }
+  @media only screen and (min-width: 510px){
+    font-size: calc(#{$header-height} * 0.75);
+  }
   font-family: $raleway;
-  font-size: 35px;
   text-align: center;
 }
