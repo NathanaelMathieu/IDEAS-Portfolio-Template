@@ -1,6 +1,6 @@
 import "./Contact.scss";
+import { IconButtons, ImageCard } from "../components";
 import React, { Component } from "react";
-import { ImageCard } from "../components";
 import Layout from "../Layout.js";
 import contactText from "./Text/contactText.js";
 import professionalPhoto from "../resources/professionalPhoto.JPG";
@@ -23,8 +23,7 @@ export default class Contact extends Component {
             {contactText}
           </div>
           <div className="button_container">
-            Button
-            {/* Buttons go here */}
+            <IconButtons/>
           </div>
         </div>
       </Layout>

@@ -26,5 +26,8 @@
 
   .button_container{
     flex: 1 1 20%;
+    display: flex;
+    width: 100%;
+    justify-content: center;
   }
 }
