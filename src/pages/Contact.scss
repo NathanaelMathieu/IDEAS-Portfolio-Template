@@ -1,31 +1,30 @@
 @import "src/style.scss";
 
 .Contact {
-  margin: 24px;
-  display: flex;
-  flex-direction: column;
-  min-height: calc(100vh - #{$header-height} - 48px);
-  align-items: center;
+  padding: 2%;
+  display: grid;
+  grid-template-rows: auto auto auto;
   justify-items: center;
+  align-items: center;
+  height: calc(100% - 4% - #{$header-height});
 
   .card_container {
-    flex: 1 1 50%;
-    width: 100%;
-    @media only screen and (min-width: 448px){
-      width: 400px;
+    width: 80vw;
+    @media only screen and (min-width: 400px){
+      width: 25vw;
+      min-width: 320px;
     }
   }
 
   .text_container {
-    flex: 1 1 30%;
-    max-width: 400px;
+    width: 100%;
     @media only screen and (min-width: 545px){
-      max-width: 80%;
+      width: 80vw;
+      min-width: 545px;
     }
   }
 
   .button_container{
-    flex: 1 1 20%;
     display: flex;
     width: 100%;
     justify-content: center;
