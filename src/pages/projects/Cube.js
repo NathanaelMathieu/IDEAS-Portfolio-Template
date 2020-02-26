@@ -3,8 +3,8 @@ import React, { Component } from "react";
 import { endText, mainText } from "./Text/cubeText.js";
 import { ImageCard } from "../../components";
 import Layout from "../../Layout.js";
-import cubeIso1 from "../../resources/projects/cube/iso1_sd.jpg";
-import cubeIso3 from "../../resources/projects/cube/iso3_sd.jpg";
+import cubeIso1 from "../../resources/projects/cube/iso1.jpg";
+import cubeIso3 from "../../resources/projects/cube/iso3.jpg";
 
 export default class Cube extends Component {
   componentDidMount() {

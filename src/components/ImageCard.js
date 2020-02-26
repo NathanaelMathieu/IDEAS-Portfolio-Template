@@ -1,7 +1,7 @@
 import "./ImageCard.scss";
 import React, { Component } from "react";
-import { imageNotFound_4x6_med as default4x6,
-  imageNotFound_square_high as defaultSquare } from "../resources/";
+import { imageNotFound_4x6 as default4x6,
+  imageNotFound_square as defaultSquare } from "../resources/";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 
