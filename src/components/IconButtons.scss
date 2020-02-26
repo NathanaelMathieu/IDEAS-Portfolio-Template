@@ -1,7 +1,6 @@
 @import "src/style.scss";
 
 .IconButtons {
-  // filter:  drop-shadow(0 0 4px rgba(0,0,0,0.4));
   padding: .5vw;
   border-radius: 12px;
   background-color: $wesleyan-red;
@@ -10,6 +9,7 @@
   grid-gap: 15%;
   width: fit-content;
   min-width: 9em;
+  max-height: 2em;
   align-items: center;
   justify-content: center;
   .icon:hover {
