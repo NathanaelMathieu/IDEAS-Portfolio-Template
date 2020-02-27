@@ -2,20 +2,18 @@
 
 .ProjectContainer {
   display: grid;
-  grid-template-columns: calc(100% - #{$projects-gap});
-  column-gap: $projects-gap;
+  grid-template-columns: 1fr;
+  column-gap: 2vw;
   row-gap: 3vh;
-  max-width: inherit;
-  min-height: calc(100vh - #{$header-height});
-  margin: auto;
-  padding: calc(#{$projects-gap} / 2);
+  padding: 2%;
+  padding-bottom: 4%;
   justify-content: center;
 
   @media only screen and (min-width: 600px){
-    grid-template-columns: repeat(2, calc(50% - #{$projects-gap} * 2 / 3));
+    grid-template-columns: 1fr 1fr;
   }
 
   @media only screen and (min-width: 1000px){
-    grid-template-columns: repeat(3, calc(33% - #{$projects-gap} * 2 / 3));
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
