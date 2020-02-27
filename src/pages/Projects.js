@@ -1,7 +1,6 @@
 import "./Projects.scss";
+import { ImageCard, Layout } from "../components/";
 import React, { Component } from "react";
-import { ImageCard } from "../components";
-import Layout from "../Layout.js";
 import cubeBrick from "../resources/projects/cube/brick.jpg";
 import cubeHall from "../resources/projects/cube/hall.jpg";
 import cubeIso1 from "../resources/projects/cube/iso1.jpg";

@@ -1,5 +1,5 @@
 import "./NotFound.scss";
-import Layout from "../Layout";
+import { Layout } from "../components/";
 import React from "react";
 
 function NotFound () {

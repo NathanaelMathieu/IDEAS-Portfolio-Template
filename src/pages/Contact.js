@@ -1,7 +1,6 @@
 import "./Contact.scss";
-import { IconButtons, ImageCard } from "../components";
+import { IconButtons, ImageCard, Layout } from "../components/";
 import React, { Component } from "react";
-import Layout from "../Layout.js";
 import contactText from "./Text/contactText.js";
 import professionalPhoto from "../resources/professionalPhoto.JPG";
 

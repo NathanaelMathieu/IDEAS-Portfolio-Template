@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Layout from "./Layout.js";
+import { Layout } from "./components";
 
 export default class App extends Component {
   render() {

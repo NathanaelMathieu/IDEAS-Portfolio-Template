@@ -1,8 +1,7 @@
 import "./About.scss";
-import { ImageCard, Text } from "../components/";
+import { ImageCard, Layout, Text } from "../components/";
 import React, { Component } from "react";
 import { aboutMeText, aboutProjectText } from "./Text/aboutText.js";
-import Layout from "../Layout.js";
 import cubeIso2 from "../resources/projects/cube/iso2.jpg";
 import professionalPhoto from "../resources/professionalPhoto.JPG";
 

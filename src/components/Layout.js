@@ -1,6 +1,6 @@
 import "./Layout.scss";
 import React, { Component } from "react";
-import { Header } from "./components/";
+import { Header } from "./";
 import PropTypes from "prop-types";
 
 export default class Layout extends Component {
