@@ -28,7 +28,7 @@ function IconButtons() {
   return <div className="IconButtons">
       {styleIcon(
         GoMarkGithub,
-        "https://github.com/placeholder"
+        "https://github.com/"
       )}
       {styleIcon(
         IoMdMail,
@@ -36,7 +36,7 @@ function IconButtons() {
       )}
       {styleIcon(
         FaLinkedin,
-        "https://www.linkedin.com/in/placeholder/"
+        "https://www.linkedin.com/"
       )}
     </div>;
 }
