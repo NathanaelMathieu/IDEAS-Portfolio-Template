@@ -18,6 +18,7 @@ This template was created in 2020 and is meant to be updated. While it is perfec
 6. Open a terminal and navigate to the directory you want your portfolio to be stored in. Taking care to replace the link with the repository created in Step 2, run `git clone https://github.com/USERNAME/REPOSITORY_NAME.git`. This will create a local copy of the repository.
 7. Navigate to the newly created folder. You should see all the files and folders listed on the GitHub Page.
 8. Run `npm install` in the project directory to install dependencies.
+9. Create a new file `.env` at the top level of the directory. Add the line `PUBLIC_URL=https://username.github.io/project` replacing `username` and `project` with your own. This file will be ignored by git, but will tell `gh-pages` the url to use when the app is deployed.
 
 You are all set! All the scripts below should run successfully.
 
@@ -65,7 +66,7 @@ Your app is ready to be deployed!
 
 Creates or pushes to a new `gh-pages` branch of the project. This branch is used as the source code for the public `github.io` page of the project.
 
-If deploy is not working, confirm that the `homepage` property in package.json is set correctly. You may also need to create a .env file in the main directory and add the global variable `PUBLIC_URL` with the same value as `homepage`.
+If deploy is not working, confirm that the global variable `PUBLIC_URL` is set correctly in `.env`.
 
 ### `npm run eject`
 
