@@ -29,7 +29,7 @@ If you would like to make changes to the original Portfolio Template:
 2. Run `git remote -v` to see the remote branches.
 3. Run `git push upstream master` where upstream is the corresponding remote branch.
 
-Similarly, if you would like to get changes to the Portfolio Template that were made after you forked your portfolio, run `git pull upstream master` where upstream is the corresponding remote branch.
+Similarly, if you would like to get changes to the Portfolio Template that were made after you forked your portfolio, run `git pull upstream master` where `upstream` is the corresponding remote branch.
 
 ## Available Scripts (Mostly from create-react-app)
 
