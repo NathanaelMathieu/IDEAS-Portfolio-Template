@@ -2,7 +2,7 @@ import "./Contact.scss";
 import { IconButtons, ImageCard, Layout } from "../components/";
 import React, { Component } from "react";
 import contactText from "./Text/contactText.js";
-import professionalPhoto from "../resources/professionalPhoto.JPG";
+import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
 
 
 export default class Contact extends Component {

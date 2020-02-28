@@ -3,7 +3,7 @@ import { ImageCard, Layout, Text } from "../components/";
 import React, { Component } from "react";
 import { aboutMeText, aboutProjectText } from "./Text/aboutText.js";
 import cubeIso2 from "../resources/projects/cube/iso2.jpg";
-import professionalPhoto from "../resources/professionalPhoto.JPG";
+import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
 
 export default class About extends Component {
   componentDidMount() {

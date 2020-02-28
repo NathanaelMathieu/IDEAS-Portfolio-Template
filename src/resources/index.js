@@ -8,4 +8,4 @@ export {
   } from "./ImageNotFound_square.png";
 export {
   default as professionalPhoto
-  } from "./professionalPhoto.JPG";
+  } from "./ProfessionalPhoto.JPG";
