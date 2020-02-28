@@ -8,7 +8,7 @@ This template was created in 2020 and is meant to be updated. While it is perfec
 
 ## Getting Started
 
-### Creating a new portfolio
+### Creating a New Portfolio
 
 1. Create and login to a GitHub account.
 2. Navigate to this [project](https://github.com/NathanaelMathieu/IDEAS-Portfolio-Template) and select `Fork` in the top right. This will create your own remote version of the template that you can freely edit without affecting the original.
@@ -17,9 +17,21 @@ This template was created in 2020 and is meant to be updated. While it is perfec
 5. Install [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 6. Open a terminal and navigate to the directory you want your portfolio to be stored in. Taking care to replace the link with the repository created in Step 2, run `git clone https://github.com/USERNAME/REPOSITORY_NAME.git`. This will create a local copy of the repository.
 7. Navigate to the newly created folder. You should see all the files and folders listed on the GitHub Page.
-8. Run `npm install` in the project directory to setup the [To Be Continued]
+8. Run `npm install` in the project directory to install dependencies.
 
-## Available Scripts
+You are all set! All the scripts below should run successfully.
+
+### Portfolio Template Updates
+
+If you would like to make changes to the original Portfolio Template:
+
+1. Commit the changes you would like to make to the Template.
+2. Run `git remote -v` to see the remote branches.
+3. Run `git push upstream master` where upstream is the corresponding remote branch.
+
+Similarly, if you would like to get changes to the Portfolio Template that were made after you forked your portfolio, run `git pull upstream master` where upstream is the corresponding remote branch.
+
+## Available Scripts (Mostly from create-react-app)
 
 In the project directory, you can run:
 
@@ -49,7 +61,11 @@ The build is minified and the filenames include the hashes.
 
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `npm run deploy`
+
+Creates or pushes to a new `gh-pages` branch of the project. This branch is used as the source code for the public `github.io` page of the project.
+
+If deploy is not working, confirm that the `homepage` property in package.json is set correctly. You may also need to create a .env file in the main directory and add the global variable `PUBLIC_URL` with the same value as `homepage`.
 
 ### `npm run eject`
 
