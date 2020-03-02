@@ -5,9 +5,9 @@ import propTypes from "prop-types";
 function Text(props) {
 
   if (props.preformatted) {
-    return <pre className={props.class}>
-      {props.text}
-    </pre>;
+    return <div className={props.class}>
+      {props.preformatted}
+    </div>;
   }
 
   return (
@@ -18,13 +18,13 @@ function Text(props) {
 
 Text.propTypes = {
   "class": propTypes.string,
-  "preformatted": propTypes.bool,
+  "preformatted": propTypes.object,
   "text": propTypes.string
 };
 
 Text.defaultProps = {
   "class": "body",
-  "preformatted": false,
+  "preformatted": null,
   "text": ""
 };
 
