@@ -7,7 +7,7 @@ import professionalPhoto from "../resources/ProfessionalPhoto.JPG";
 
 export default class About extends Component {
   componentDidMount() {
-    document.title = "About Me | Nathanael Mathieu";
+    document.title = "About Me | IDEAS Student";
   }
 
   render() {
